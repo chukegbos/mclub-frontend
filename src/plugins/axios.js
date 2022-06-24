@@ -11,7 +11,7 @@ axios.defaults.withCredentials = true;
 let config = {
   //baseURL: process.env.VUE_APP_ROOT_API,
   //baseURL: "http://127.0.0.1:8000/api/",
-  baseURL: "https://club247-api.herokuapp.com/",
+  baseURL: "https://club247-api.herokuapp.com/api",
 
   withCredentials: false, // Check cross-site Access-Control
 };
