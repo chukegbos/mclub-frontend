@@ -1,7 +1,9 @@
 /*eslint-disable*/
 "use strict";
+
 import Vue from "vue";
 import axios from "axios";
+
 axios.defaults.headers.post["Content-Type"] =
   "application/x-www-form-urlencoded";
 
@@ -9,12 +11,12 @@ axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 axios.defaults.withCredentials = true;
 
 let config = {
-  //baseURL: process.env.VUE_APP_ROOT_API,
-  //baseURL: "http://127.0.0.1:8000/api/",
-  baseURL: "https://club247-api.herokuapp.com/api",
+  baseURL: 'http://127.0.0.1:8000/api',
+  // baseURL: 'https://club247-api.herokuapp.com/api/',
 
   withCredentials: false, // Check cross-site Access-Control
 };
+
 const _axios = axios.create(config);
 
 _axios.interceptors.request.use(
@@ -41,6 +43,7 @@ _axios.interceptors.response.use(
     return;
   }
 );
+
 Plugin.install = function (Vue, options) {
   Vue.axios = _axios;
   window.axios = _axios;
@@ -72,5 +75,7 @@ Plugin.install = function (Vue, options) {
     },
   });
 };
+
 Vue.use(Plugin);
+
 export default Plugin;

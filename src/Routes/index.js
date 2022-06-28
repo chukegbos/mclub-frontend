@@ -2,6 +2,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import { adminRoute } from "./adminRoute";
+import { generalRoute } from "./generalRoute";
 import { userRoute } from "./userRoute";
 
 import Index from "@/Pages/UserEnd/index";
@@ -39,16 +40,16 @@ const router = new Router({
       name: "AdminLogin",
       component: () => import("@/Pages/AdminEnd/AdminAuth/Login/login.vue"),
     },
-    {
-      path: "/admin",
-      name: "AdminIndex",
-      redirect: { name: "Dashboard" },
-      meta: {
-        isAuthenticated: true,
-      },
-      component: () => import("@/components/layout/DashboardLayout.vue"),
-      children: [...adminRoute],
-    },
+    // {
+    //   path: "/admin",
+    //   name: "AdminIndex",
+    //   redirect: { name: "Dashboard" },
+    //   meta: {
+    //     isAuthenticated: true,
+    //   },
+    //   component: () => import("@/components/layout/DashboardLayout.vue"),
+    //   children: [...adminRoute],
+    // },
 
     {
       path: "/",
@@ -57,6 +58,7 @@ const router = new Router({
       meta: {
         isAuthenticated: true,
       },
+      component: () => import("@/components/layout/UserDashboard.vue"),
       children: [...userRoute],
     },
     {

@@ -95,8 +95,6 @@ export default {
           username: "",
           password: "",
         },
-      
-      background: require("@/assets/images/bg-1.jpg"),
     };
   },
   created() {
@@ -106,7 +104,6 @@ export default {
   beforeMount() {},
   methods: {
     submitDetails() {
-      
       this.$store
       .dispatch("UserAuth/LOGIN", { query: this.form })
       .then((resp) => {

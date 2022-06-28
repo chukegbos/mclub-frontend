@@ -17,6 +17,7 @@ import "jquery/src/jquery.js";
 import VueSweetalert2 from "vue-sweetalert2";
 
 import "sweetalert2/dist/sweetalert2.min.css";
+
 Vue.use(VueSweetalert2);
 window.btToast = Vue.swal.mixin({
   toast: true,
@@ -29,9 +30,17 @@ window.btToast = Vue.swal.mixin({
   timer: 2000,
   timerProgressBar: true,
 });
-// LightBootstrap plugin
+
+//LightBootstrap plugin
+
 import LightBootstrap from "./light-bootstrap-main";
 Vue.use(LightBootstrap);
+
+//admin template installation
+import admintemplate from "./admintemplate.js";
+Vue.use(admintemplate);
+
+console.log(process.env);
 
 Vue.config.productionTip = false;
 new Vue({

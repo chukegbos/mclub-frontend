@@ -10,7 +10,7 @@
           </li>
         </ul>
       </nav>
-      <div class="copyright text-center">&copy; DsongsCode</div>
+      <div class="copyright text-center">&copy; </div>
     </div>
   </footer>
 </template>
