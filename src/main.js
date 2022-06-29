@@ -9,11 +9,13 @@ import store from "./store/index";
 // Vue.use(BootstrapVue);
 // Optionally install the BootstrapVue icon components plugin
 // Vue.use(IconsPlugin);
-import "bootstrap";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "bootstrap/dist/js/bootstrap.bundle.js";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/src/jquery.js";
+// import "bootstrap";
+//admin template installation
+import admintemplate from "./admintemplate.js";
+
+Vue.use(admintemplate);
+
 import VueSweetalert2 from "vue-sweetalert2";
 
 import "sweetalert2/dist/sweetalert2.min.css";
@@ -33,12 +35,11 @@ window.btToast = Vue.swal.mixin({
 
 //LightBootstrap plugin
 
-import LightBootstrap from "./light-bootstrap-main";
-Vue.use(LightBootstrap);
+// import LightBootstrap from "./light-bootstrap-main";
+// Vue.use(LightBootstrap);
 
-//admin template installation
-import admintemplate from "./admintemplate.js";
-Vue.use(admintemplate);
+
+
 
 console.log(process.env);
 
