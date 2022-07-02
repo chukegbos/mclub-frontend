@@ -3,16 +3,14 @@
         <div class="container-fluid">
         <nav>
             <ul class="footer-menu">
-            <li>
-                <router-link :to="{ path: '/home' }"
-                ></router-link
-                >
-            </li>
+                <li>
+                    <router-link :to="{ path: '/home' }"></router-link>
+                </li>
             </ul>
         </nav>
         <base-admin>
             <template v-slot:company>
-                <p class="text-center">&copy; {{new Date().getFullYear()}} SpecsTechAfrica</p>
+                <p class="text-center">&copy; {{ new Date().getFullYear() }} Alrights Reserved SpecsTechAfrica</p>
             </template>
         </base-admin>
             
@@ -25,9 +23,6 @@ import BaseAdmin from '../BaseAdminComponent.vue'
 export default {
     components: {
         BaseAdmin
-    },
-    data() {
-        
-    },
+    }
 }
 </script>

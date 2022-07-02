@@ -1,15 +1,21 @@
 <template>
     <div>
         <Header></Header>
-        <div class="content-main  container">
+         <div class="container-fluid content-main">
             <Sidebar></Sidebar>
             <div class="pcoded-main-container">
-                <div class="pcoded-content">
-                    <transition name="fade" mode="out-in">
-
-                        <router-view></router-view>
-
-                    </transition>
+                <div class="pcoded-wrapper">
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <transition name="fade" mode="out-in">
+                                        <router-view></router-view>
+                                    </transition>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

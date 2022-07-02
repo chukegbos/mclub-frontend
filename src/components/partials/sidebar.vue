@@ -1,40 +1,116 @@
 <template>
-    <nav class="pcoded-navbar menupos-fixed menu-light ">
-		<div class="navbar-wrapper content-main  container">
-			<div class="navbar-content scroll-div " >
-				<ul class="nav pcoded-inner-navbar ">
+	<nav class="pcoded-navbar menupos-fixed">
+		<div class="navbar-wrapper">
+			<div class="navbar-content scroll-div">
+				<ul class="nav pcoded-inner-navbar">
 					<li class="nav-item pcoded-menu-caption">
-						<label>Dashboard</label>
+						<label>Membership</label>
 					</li>
 					<li class="nav-item">
 						<a href="/" class="nav-link ">
 							<span class="pcoded-micon">
 								<i class="feather icon-server"></i>
 							</span>
-							<span class="pcoded-mtext">Home</span>
+							<span class="pcoded-mtext">Dashboard</span>
 						</a>
 					</li>
 
-					<li class="nav-item pcoded-menu-caption">
-						<label>Member Sections</label>
+					<li class="nav-item">
+						<a href="/" class="nav-link ">
+							<span class="pcoded-micon">
+								<i class="feather icon-user"></i>
+							</span>
+							<span class="pcoded-mtext">Members</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/member-section" class="nav-link ">
+							<span class="pcoded-micon">
+								<i class="feather icon-box"></i>
+							</span>
+							<span class="pcoded-mtext">Member Sections</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/member-types" class="nav-link ">
+							<span class="pcoded-micon">
+								<i class="feather icon-layers"></i>
+							</span>
+							<span class="pcoded-mtext">Member Types</span>
+						</a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
 						<a href="#!" class="nav-link ">
 							<span class="pcoded-micon">
 								<i class="feather icon-layout"></i>
 							</span>
-							<span class="pcoded-mtext">Sections</span>
+							<span class="pcoded-mtext">Payments</span>
 						</a>
 						<ul class="pcoded-submenu">
 							<li>
-								<a href="#">All Section</a>
+								<a href="#">Payment Products</a>
 							</li>
 							<li>
-								<a href="#">New Section</a>
+								<a href="#">Payment Debits</a>
+							</li>
+							<li>
+								<a href="#">Payment History</a>
 							</li>
 						</ul>
 					</li>
+					
 
+					<li class="nav-item pcoded-menu-caption">
+
+						<label>Inventory</label><span class="pcoded-badge badge badge-danger">Coming soon</span>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+
+						<label>Bar</label><span class="pcoded-badge badge badge-danger">Coming soon</span>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Kitchen</label><span class="pcoded-badge badge badge-danger">Coming soon</span>
+					</li>
+
+					<li class="nav-item pcoded-menu-caption">
+						<label>Settings</label>
+					</li>
+					<li class="nav-item">
+						<a href="/" class="nav-link ">
+							<span class="pcoded-micon">
+								<i class="feather icon-server"></i>
+							</span>
+							<span class="pcoded-mtext">Admin</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/" class="nav-link ">
+							<span class="pcoded-micon">
+								<i class="feather icon-server"></i>
+							</span>
+							<span class="pcoded-mtext">Configure Application</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/" class="nav-link ">
+							<span class="pcoded-micon">
+								<i class="feather icon-server"></i>
+							</span>
+							<span class="pcoded-mtext">Profile</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/logout" class="nav-link ">
+							<span class="pcoded-micon">
+								<i class="feather icon-server"></i>
+							</span>
+							<span class="pcoded-mtext">Logout</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
